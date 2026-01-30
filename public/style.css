@@ -117,10 +117,10 @@ body.dark-mode .page-header {
 
 /* Page Header */
 .page-header {
-    width: 100%;
+    width: 95%;
     background-color: #333;
     color: white;
-    padding: 20px 40px;
+    padding: 40px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -128,13 +128,34 @@ body.dark-mode .page-header {
     z-index: 100;
     position: relative;
     transition: all 0.3s ease;
-    border-bottom: 2px solid #007bff;
+    border-bottom: 2px solid #049746;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .page-header h1 {
     margin: 0;
     font-size: 28px;
     font-weight: bold;
+}
+
+.by-author {
+    color: white;
+    font-size: 14px;
+}
+
+.github-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.github-link:hover {
+    color: white;
 }
 
 /* Theme Toggle Button */
