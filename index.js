@@ -36,7 +36,7 @@ app.post('/api/chat', async (req, res) => {
             contents,
             config: {
                 temperature: 1.2,
-                systemInstruction: 'Keep responses limited to less then 40 words and in plain text. You are an animal expert you answer only animal related questions with short and easy to understand answers. At the end of each answer type the noise of the animal questioned.',
+                systemInstruction: 'Keep responses limited to less then 40 words and in plain text. You are an animal expert you answer only animal related questions with short and easy to understand answers if asked about image of said animal link directly to relevant wikipedia page. At the end of each answer type the noise of the animal questioned.',
             }
         })
         res.status(200).json({ result: response.text })
